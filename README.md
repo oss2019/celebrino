@@ -1,0 +1,51 @@
+# Celebrino
+
+[![Issues](https://img.shields.io/github/issues-closed/oss2019/celebrino.svg?style=flat-square)](https://github.com/oss2019/information-security/issues) [![Pull Requests](https://img.shields.io/github/issues-pr-closed/oss2019/celebrino.svg?style=flat-square)](https://github.com/oss2019/information-security/pulls) [![License](https://img.shields.io/apm/l/vim-mode.svg?style=flat-square)](https://github.com/oss2019/celebrino/blob/master/LICENSE) [![Gitter](https://img.shields.io/badge/chat-on%20gitter-ff006f.svg?style=flat-square)](https://gitter.im/osssoc/community) 
+
+## Problem
+Have you ever thought why we get too many emails regarding events/talks these days and any Solution on tackling it?
+
+## Potential Solution
+Let's make an App for our college which will manage all the events and notify you for favourite event!
+
+## How ?
+There are many ways by which one can implement it, but since our purpose for this summer is to learn something good
+we will be using MEAN stack.
+
+## What is MEAN ?
+M - Mongo DB,   ( Database )
+E - Express,    ( Framwork for app )
+A - Angular JS, ( Frontend )
+N - Node.js     ( Backend )
+
+We wiil use this MEAN stack to implement our idea. 
+
+Details regarding the MEAN stack is attached below. 
+For now we have added resources only for those which we will require to start, other resources will be added as we go on further with the project :) 
+
+## node.js
+
+Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network 
+applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and 
+efficient, perfect for data-intensive real-time applications that run across distributed devices
+
+
+
+## Angular JS
+AngularJS is a toolset for building the framework most suited to application development. AngularJS lets you extend HTML vocabulary for your application.
+The resulting environment is extraordinarily expressive, readable, and quick to develop.
+
+
+Enough of introduction, Let's start learning!
+Below are the links to resources
+
+## Resources
+
+https://drive.google.com/open?id=1Tk_hui6r-iDUZHI1tvBGDo_pCFlG4Z2b
+
+https://node.cool
+
+If you find any problem or have any queries, contact :~
+
+    Mandeep Bawa - 170030038
+    Jay Garchar - 170010001
