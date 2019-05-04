@@ -1,0 +1,29 @@
+<h2> THe club create component</h2>
+<mat-card>
+<form (submit)="onAddClub(clubForm)" #clubForm="ngForm">
+    <mat-form-field>
+        <h3>Club Name</h3>
+        <input matInput name="clubName" ngModel required #clubName="ngModel">
+        <mat-error *ngIf="clubName.invalid">Please enter Club Name</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <h3>Club Secretary</h3>
+        <input  matInput name="clubSecretary" ngModel required #clubSecretary="ngModel">
+        <mat-error *ngIf="clubSecretary.invalid">Please enter Club Secretary Name</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <h3>Description</h3>
+        <textarea matInput cols="30" rows="4" name="clubDescription" ngModel required minlength="10" #clubDescription="ngModel"></textarea>
+        <mat-error *ngIf="clubDescription.invalid">Please enter Club Description</mat-error>
+    </mat-form-field>
+    <hr>
+    <button 
+        mat-raised-button
+        color="accent" 
+        type="submit">Save</button>
+</form>
+
+</mat-card><br>
+
