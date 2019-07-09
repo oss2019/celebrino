@@ -22,11 +22,15 @@ export class ClubListComponent implements OnInit,OnDestroy{
         this.clubsService = clubsService;
     }
     ngOnInit() {
-        this.clubsList = this.clubsService.getClubs();
+        this.clubsService.getClubs();
         this.clubsSub = this.clubsService.getUpdateClubListener()
         .subscribe((clubsList: Club[])=>{
             this.clubsList = clubsList;
         });
+    }
+
+    onDelete(clubId: string){
+        this.clubsService.deleteClub(clubId);
     }
 
     ngOnDestroy() {

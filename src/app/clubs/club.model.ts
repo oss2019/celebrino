@@ -1,5 +1,6 @@
 export interface Club {
-    name: string,
-    secretary: string,
-    content: string
+    id: String,
+    name: String,
+    secretary: String,
+    content: String
 }
