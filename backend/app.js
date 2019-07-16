@@ -6,7 +6,7 @@ const Club = require('./models/club');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://mandeep:Tr6wYmhrRGlvxfKw@cluster0-3oshg.mongodb.net/events?retryWrites=true')
+mongoose.connect("mongodb://localhost:27017/events")
 .then(()=>{
     console.log('Connected to Database');
     })
@@ -35,10 +35,13 @@ app.post('/api/clubs',(req,res,next)=>{
             message: "Club added successfully",
             id: response._id
         });
-    });
-    res.status(201).json({
-        message: "Club added successfully"
-    });
+    }).catch(err => {
+        if(err) {
+            res.status(404).json({
+                message: "Problem in adding club",
+            }); 
+        }
+    })
 });
 
 app.get('/api/clubs',(req,res,next)=>{
@@ -48,15 +51,20 @@ app.get('/api/clubs',(req,res,next)=>{
             message:"send successfully",
             clubs: documents
         });
-    });
-    
+    }).catch(err => {
+        res.status(404).json({
+            message: "Error in finding clubs"
+        })
+    })
 });
 
 app.delete('/api/clubs/:id',(req,res,next) => {
     Club.deleteOne({_id:req.params.id}).then((response) => {
         console.log(response);
+        res.status(200).json({message: "Club Deleted"});
+    }).catch(err => {
+        res.status(200).json({message: "Club Deleted"});
     });
-    res.status(200).json({message: "Club Deleted"});
 })
 
 
