@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous|Source+Serif+Pro&display=swap');
+.background_landing {
+  background-image: url("socialise_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  width: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  background-attachment: fixed;
+}
+.brand {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 15rem;
+  z-index: 2;
+  color: white;
+  font-weight: 400;
+  margin-top: 12%;
+}
+.eventHead {
+  margin-top: 30%;
+  font-family: 'Righteous', cursive;
+}
+.event {
+  margin-top: 10%;
+}
+.coding {
+  background-image: url("images/work-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  width: auto;
+  z-index: -1;
+  background-attachment: fixed;
+}
+.title {
+  padding-top: 70%;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 500;
+  margin-left: 0px;
+  padding-left: 10%;
+}
+.title_underline {
+  width: 250px;
+  border-top: 5px solid black;
+  margin-left: 0px;
+  padding-left: 10%;
+  margin-top: 0px;
+}
+
+
+
+
+/* Footer */
+
+.footer_end {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 10px;
+}
+#myFooter {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+#myFooter .info{
+  text-align: justify;
+  color: #afb0b1;
+}
+
+#myFooter ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.7;
+}
+
+#myFooter h5 {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#myFooter .logo{
+  margin-top: 10px;
+}
+
+#myFooter .second-bar .logo a{
+  color:white;
+  font-size: 28px;
+  float: left;
+  font-weight: bold;
+  line-height: 68px;
+  margin: 0;
+  padding: 0;
+}
+
+#myFooter a {
+  color: #d2d1d1;
+  text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+#myFooter .second-bar {
+  text-align: center;
+  background-color: #33373e;
+  text-align: center;
+}
+
+#myFooter .second-bar a {
+  font-size: 22px;
+  color: #9fa3a9;
+  padding: 10px;
+  transition: 0.2s;
+  line-height: 68px;
+}
+
+#myFooter .second-bar a:hover {
+  text-decoration: none;
+}
+
+#myFooter .social-icons {
+  float:right;
+}
+
+
+#myFooter .facebook:hover {
+  color: #0077e2;
+}
+
+#myFooter .google:hover {
+  color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+  color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+  #myFooter {
+      text-align: center;
+  }
+
+  #myFooter .info{
+      text-align: center;
+  }
+}
+
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  height: 100%;
+}
+
+.content{
+ flex: 1 0 auto;
+ -webkit-flex: 1 0 auto;
+ min-height: 200px;
+}
+
+#myFooter{
+ flex: 0 0 auto;
+ -webkit-flex: 0 0 auto;
+}

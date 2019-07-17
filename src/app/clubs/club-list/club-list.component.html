@@ -1,14 +1,15 @@
+<div class="background"></div>
 <mat-accordion multi="true" *ngIf="clubsList.length > 0">
     <mat-expansion-panel *ngFor="let club of clubsList">
         <mat-expansion-panel-header>
-            {{club.name}}     
+            {{club.name}}
         </mat-expansion-panel-header>
         <p>Secretary: {{club.secretary}}</p>
         <p>Description: {{club.content}}</p>
         <mat-action-row>
         <button mat-button color="primary">EDIT</button>
-        <button mat-button color="warn" (click)="onDelete(club.id)">DELETE</button>    
+        <button mat-button color="warn" (click)="onDelete(club.id)">DELETE</button>
         </mat-action-row>
     </mat-expansion-panel>
 </mat-accordion>
-<p class="info-text mat-body-1" *ngIf="clubsList.length <= 0">No clubs added yet </p>
+<h3 class="info-text mat-body-1" *ngIf="clubsList.length <= 0">No clubs added yet </h3>
