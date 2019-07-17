@@ -1,4 +1,5 @@
-<h2> THe club create component</h2>
+<div class="background"></div>
+<h2> The club create component</h2>
 <mat-card>
 <form (submit)="onAddClub(clubForm)" #clubForm="ngForm">
     <mat-form-field>
@@ -19,9 +20,9 @@
         <mat-error *ngIf="clubDescription.invalid">Please enter Club Description</mat-error>
     </mat-form-field>
     <hr>
-    <button 
+    <button
         mat-raised-button
-        color="accent" 
+        color="accent"
         type="submit">Save</button>
 </form>
 
